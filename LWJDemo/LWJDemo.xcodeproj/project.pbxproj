@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D3B8773E8616016EB9FA68 /* libPods-LWJDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D148C0FD06713FD0B8F4C /* libPods-LWJDemoUITests.a */; };
+		B44101ACC67C2F1229287B17 /* libPods-LWJDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B94DF6BEE4E4D17EB439C8 /* libPods-LWJDemoTests.a */; };
 		ED6412D924162A3D008FA6B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6412D824162A3D008FA6B5 /* AppDelegate.m */; };
 		ED6412DC24162A3D008FA6B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6412DB24162A3D008FA6B5 /* SceneDelegate.m */; };
 		ED6412DF24162A3D008FA6B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6412DE24162A3D008FA6B5 /* ViewController.m */; };
@@ -37,8 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09B94DF6BEE4E4D17EB439C8 /* libPods-LWJDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWJDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B0F21087519C111D122BB7 /* libPods-LWJDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWJDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEAA81E30FB84BE51652168 /* Pods-LWJDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-LWJDemoUITests/Pods-LWJDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52170446D8F02E57E9E308E7 /* Pods-LWJDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-LWJDemoTests/Pods-LWJDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F94956DD9D198BC0C3C5DA7 /* Pods-LWJDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemoTests.release.xcconfig"; path = "Target Support Files/Pods-LWJDemoTests/Pods-LWJDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		846C9661933FE658C4151FEE /* Pods-LWJDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemo.release.xcconfig"; path = "Target Support Files/Pods-LWJDemo/Pods-LWJDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D0A0B2400F99B722B51792F4 /* Pods-LWJDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-LWJDemoUITests/Pods-LWJDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB35D6D155357C8163F05B20 /* Pods-LWJDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWJDemo.debug.xcconfig"; path = "Target Support Files/Pods-LWJDemo/Pods-LWJDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		ED6412D424162A3D008FA6B5 /* LWJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6412D724162A3D008FA6B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 		ED6412FA24162A42008FA6B5 /* LWJDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWJDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6412FE24162A42008FA6B5 /* LWJDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWJDemoUITests.m; sourceTree = "<group>"; };
 		ED64130024162A42008FA6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91D148C0FD06713FD0B8F4C /* libPods-LWJDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWJDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44101ACC67C2F1229287B17 /* libPods-LWJDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D3B8773E8616016EB9FA68 /* libPods-LWJDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				29B0F21087519C111D122BB7 /* libPods-LWJDemo.a */,
+				09B94DF6BEE4E4D17EB439C8 /* libPods-LWJDemoTests.a */,
+				F91D148C0FD06713FD0B8F4C /* libPods-LWJDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +111,10 @@
 			children = (
 				DB35D6D155357C8163F05B20 /* Pods-LWJDemo.debug.xcconfig */,
 				846C9661933FE658C4151FEE /* Pods-LWJDemo.release.xcconfig */,
+				52170446D8F02E57E9E308E7 /* Pods-LWJDemoTests.debug.xcconfig */,
+				6F94956DD9D198BC0C3C5DA7 /* Pods-LWJDemoTests.release.xcconfig */,
+				D0A0B2400F99B722B51792F4 /* Pods-LWJDemoUITests.debug.xcconfig */,
+				2BEAA81E30FB84BE51652168 /* Pods-LWJDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -188,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED64130624162A42008FA6B5 /* Build configuration list for PBXNativeTarget "LWJDemoTests" */;
 			buildPhases = (
+				62DCC7E55A72D3C251FD0BF6 /* [CP] Check Pods Manifest.lock */,
 				ED6412EB24162A42008FA6B5 /* Sources */,
 				ED6412EC24162A42008FA6B5 /* Frameworks */,
 				ED6412ED24162A42008FA6B5 /* Resources */,
+				2AB0C2E6EFC2106FBAB3BDFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED64130924162A42008FA6B5 /* Build configuration list for PBXNativeTarget "LWJDemoUITests" */;
 			buildPhases = (
+				310D4B5B31CC6A1BD4CA2D64 /* [CP] Check Pods Manifest.lock */,
 				ED6412F624162A42008FA6B5 /* Sources */,
 				ED6412F724162A42008FA6B5 /* Frameworks */,
 				ED6412F824162A42008FA6B5 /* Resources */,
+				5103B39ED56E87CB5EEDED2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,6 +310,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2AB0C2E6EFC2106FBAB3BDFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LWJDemoTests/Pods-LWJDemoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LWJDemoTests/Pods-LWJDemoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LWJDemoTests/Pods-LWJDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		310D4B5B31CC6A1BD4CA2D64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LWJDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5103B39ED56E87CB5EEDED2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LWJDemoUITests/Pods-LWJDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LWJDemoUITests/Pods-LWJDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LWJDemoUITests/Pods-LWJDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DCC7E55A72D3C251FD0BF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LWJDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8BBC33873DDF2F89ADBD513A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +640,7 @@
 		};
 		ED64130724162A42008FA6B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52170446D8F02E57E9E308E7 /* Pods-LWJDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +661,7 @@
 		};
 		ED64130824162A42008FA6B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F94956DD9D198BC0C3C5DA7 /* Pods-LWJDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -582,6 +682,7 @@
 		};
 		ED64130A24162A42008FA6B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A0B2400F99B722B51792F4 /* Pods-LWJDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5H2EWEGW3;
@@ -600,6 +701,7 @@
 		};
 		ED64130B24162A42008FA6B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEAA81E30FB84BE51652168 /* Pods-LWJDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5H2EWEGW3;
