@@ -1,5 +1,5 @@
 //
-//  RACBase.h
+//  LWJTextView.h
 //  iOSDemo
 //
 //  Created by Ronds on 2020/4/13.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RACBase : BaseViewController
+@interface LWJTextView : UITextView
 
 @end
 

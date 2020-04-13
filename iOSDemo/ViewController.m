@@ -10,6 +10,7 @@
 #import <iOSDemo-Swift.h>
 #import "BlockVC.h"
 #import "RACBase.h"
+#import "UIUsage.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *datas;
@@ -37,6 +38,7 @@
     [_datas addObject:@"基于Flex布局-YogaKit库"];
     [_datas addObject:@"Block基础"];
     [_datas addObject:@"ReactiveCocoa"];
+    [_datas addObject:@"UIComponents"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -78,6 +80,11 @@
         case 2:{
             RACBase *racb = [[RACBase alloc] init];
             [self.navigationController pushViewController:racb animated:YES];
+        }
+            break;
+        case 3:{
+            UIUsage *usage = [[UIUsage alloc] init];
+            [self.navigationController pushViewController:usage animated:YES];
         }
             break;
         default:

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^ClickBlock)(NSInteger index);
-@interface BlockVC : UIViewController
+@interface BlockVC : BaseViewController
 @property (nonatomic, copy) ClickBlock imageClickBlock;
 -(void)defTest:(ClickBlock)block;
 @end
