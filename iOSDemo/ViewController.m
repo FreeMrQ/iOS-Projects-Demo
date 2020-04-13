@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <iOSDemo-Swift.h>
+#import "BlockVC.h"
+#import "RACBase.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *datas;
@@ -33,6 +35,8 @@
 
 -(void)initData{
     [_datas addObject:@"基于Flex布局-YogaKit库"];
+    [_datas addObject:@"Block基础"];
+    [_datas addObject:@"ReactiveCocoa"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -66,7 +70,16 @@
             
         }
             break;
-            
+        case 1:{
+            BlockVC *bvc = [[BlockVC alloc] init];
+            [self.navigationController pushViewController:bvc animated:YES];
+        }
+            break;
+        case 2:{
+            RACBase *racb = [[RACBase alloc] init];
+            [self.navigationController pushViewController:racb animated:YES];
+        }
+            break;
         default:
             break;
     }

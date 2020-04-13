@@ -1,10 +1,10 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Yoga" "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" "${PODS_CONFIGURATION_BUILD_DIR}/Yoga" "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Yoga" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit"
-OTHER_LDFLAGS = $(inherited) -framework "UIKit" -framework "YogaKit" -framework "yoga"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Yoga" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/YogaKit"
+OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "Masonry" -framework "ReactiveObjC" -framework "UIKit" -framework "YogaKit" -framework "yoga"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

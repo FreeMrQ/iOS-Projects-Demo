@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		436886232283557CBEE1284E /* Pods_iOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E66774820616B3F3631CD26 /* Pods_iOSDemo.framework */; };
+		445E3E7E24441026008AADF9 /* RACBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3E7D24441026008AADF9 /* RACBase.m */; };
+		445E3E812444113D008AADF9 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3E802444113C008AADF9 /* BlockVC.m */; };
 		4491A7C7243C70780081732B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C6243C70780081732B /* AppDelegate.m */; };
 		4491A7CA243C70780081732B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C9243C70780081732B /* SceneDelegate.m */; };
 		4491A7CD243C70780081732B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7CC243C70780081732B /* ViewController.m */; };
@@ -42,6 +44,10 @@
 		3B4C1CC9FDE13C5E7AEEA58B /* Pods-iOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemo.release.xcconfig"; path = "Target Support Files/Pods-iOSDemo/Pods-iOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3E66774820616B3F3631CD26 /* Pods_iOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		445E3E74243EFAC3008AADF9 /* iOSDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSDemo.pch; sourceTree = "<group>"; };
+		445E3E7C24441026008AADF9 /* RACBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBase.h; sourceTree = "<group>"; };
+		445E3E7D24441026008AADF9 /* RACBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBase.m; sourceTree = "<group>"; };
+		445E3E7F2444113C008AADF9 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
+		445E3E802444113C008AADF9 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		4491A7C2243C70780081732B /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4491A7C5243C70780081732B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4491A7C6243C70780081732B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +117,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		445E3E7524440F47008AADF9 /* BlockUsage */ = {
+			isa = PBXGroup;
+			children = (
+				445E3E7F2444113C008AADF9 /* BlockVC.h */,
+				445E3E802444113C008AADF9 /* BlockVC.m */,
+			);
+			path = BlockUsage;
+			sourceTree = "<group>";
+		};
+		445E3E7924440FDF008AADF9 /* ReactiveCocoaUsage */ = {
+			isa = PBXGroup;
+			children = (
+				445E3E7C24441026008AADF9 /* RACBase.h */,
+				445E3E7D24441026008AADF9 /* RACBase.m */,
+			);
+			path = ReactiveCocoaUsage;
+			sourceTree = "<group>";
+		};
 		4491A7B9243C70780081732B = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +160,8 @@
 		4491A7C4243C70780081732B /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				445E3E7924440FDF008AADF9 /* ReactiveCocoaUsage */,
+				445E3E7524440F47008AADF9 /* BlockUsage */,
 				4491A7FC243DA7C50081732B /* YogaUsage */,
 				4491A7C5243C70780081732B /* AppDelegate.h */,
 				4491A7C6243C70780081732B /* AppDelegate.m */,
@@ -427,6 +453,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445E3E812444113D008AADF9 /* BlockVC.m in Sources */,
+				445E3E7E24441026008AADF9 /* RACBase.m in Sources */,
 				4491A7CD243C70780081732B /* ViewController.m in Sources */,
 				4491A7FF243DA8770081732B /* YogaBase.swift in Sources */,
 				4491A7C7243C70780081732B /* AppDelegate.m in Sources */,

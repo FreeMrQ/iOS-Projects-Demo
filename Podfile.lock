@@ -1,20 +1,28 @@
 PODS:
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - ReactiveObjC (~> 3.1.1)
   - YogaKit (~> 1.7)
 
 SPEC REPOS:
   trunk:
+    - Masonry
+    - ReactiveObjC
     - Yoga
     - YogaKit
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 50419a539bb5793fb328ce8d430962ebfc3a027e
+PODFILE CHECKSUM: 96936952de1a3ca4e81a2ad65da4c03e87508f41
 
 COCOAPODS: 1.9.1

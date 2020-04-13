@@ -9,6 +9,13 @@ target 'iOSDemo' do
   # Facebook YogaKit https://github.com/facebook/yoga/tree/master/YogaKit
   pod 'YogaKit', '~> 1.7'
   
+  # ReactiveCocoa
+  pod 'ReactiveObjC','~>3.1.1'
+  
+  # Masonry 布局框架
+  pod 'Masonry','~>1.1.0'
+  
+  
   target 'iOSDemoTests' do
     inherit! :search_paths
     # Pods for testing
