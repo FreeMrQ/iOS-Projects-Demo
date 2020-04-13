@@ -11,7 +11,6 @@
 		4491A7C7243C70780081732B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C6243C70780081732B /* AppDelegate.m */; };
 		4491A7CA243C70780081732B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C9243C70780081732B /* SceneDelegate.m */; };
 		4491A7CD243C70780081732B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7CC243C70780081732B /* ViewController.m */; };
-		4491A7D0243C70780081732B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4491A7CE243C70780081732B /* Main.storyboard */; };
 		4491A7D2243C707C0081732B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4491A7D1243C707C0081732B /* Assets.xcassets */; };
 		4491A7D5243C707C0081732B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4491A7D3243C707C0081732B /* LaunchScreen.storyboard */; };
 		4491A7D8243C707C0081732B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7D7243C707C0081732B /* main.m */; };
@@ -42,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3B4C1CC9FDE13C5E7AEEA58B /* Pods-iOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemo.release.xcconfig"; path = "Target Support Files/Pods-iOSDemo/Pods-iOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3E66774820616B3F3631CD26 /* Pods_iOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		445E3E74243EFAC3008AADF9 /* iOSDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSDemo.pch; sourceTree = "<group>"; };
 		4491A7C2243C70780081732B /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4491A7C5243C70780081732B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4491A7C6243C70780081732B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,7 +49,6 @@
 		4491A7C9243C70780081732B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		4491A7CB243C70780081732B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4491A7CC243C70780081732B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4491A7CF243C70780081732B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4491A7D1243C707C0081732B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4491A7D4243C707C0081732B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4491A7D6243C707C0081732B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,12 +143,12 @@
 				4491A7C9243C70780081732B /* SceneDelegate.m */,
 				4491A7CB243C70780081732B /* ViewController.h */,
 				4491A7CC243C70780081732B /* ViewController.m */,
-				4491A7CE243C70780081732B /* Main.storyboard */,
 				4491A7D1243C707C0081732B /* Assets.xcassets */,
 				4491A7D3243C707C0081732B /* LaunchScreen.storyboard */,
 				4491A7D6243C707C0081732B /* Info.plist */,
 				4491A7D7243C707C0081732B /* main.m */,
 				4491A7FD243DA8770081732B /* iOSDemo-Bridging-Header.h */,
+				445E3E74243EFAC3008AADF9 /* iOSDemo.pch */,
 			);
 			path = iOSDemo;
 			sourceTree = "<group>";
@@ -301,7 +300,6 @@
 			files = (
 				4491A7D5243C707C0081732B /* LaunchScreen.storyboard in Resources */,
 				4491A7D2243C707C0081732B /* Assets.xcassets in Resources */,
-				4491A7D0243C70780081732B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,14 +467,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4491A7CE243C70780081732B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4491A7CF243C70780081732B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4491A7D3243C707C0081732B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -528,6 +518,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = iOSDemo/iOSDemo.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -584,6 +575,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = iOSDemo/iOSDemo.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
