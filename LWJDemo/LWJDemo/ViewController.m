@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BlockVC.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton *block = [[UIButton alloc] initWithFrame:CGRectMake(10, 100, 100, 50)];
+    [block setTitle:@"Block" forState:UIControlStateNormal];
+    [block setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [block addTarget:self
+              action:@selector(clickBlock)
+    forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:block];
+   
     // Do any additional setup after loading the view.
 }
-
+-(void)clickBlock{
+    [self presentViewController:[[BlockVC alloc] init] animated:NO completion:^{
+           
+       }];
+}
 
 @end
