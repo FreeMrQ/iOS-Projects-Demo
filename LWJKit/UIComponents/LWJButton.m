@@ -159,8 +159,8 @@ static char ActionTag;
 -(LWJButton* (^) (ClickEvent click))setDefaultClickAction{
     return ^(ClickEvent click){
         objc_setAssociatedObject(self, &ActionTag, click, OBJC_ASSOCIATION_COPY_NONATOMIC);
-               [self addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
-               return self;
+        [self addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+        return self;
     };
 }
 

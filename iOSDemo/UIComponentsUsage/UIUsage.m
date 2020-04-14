@@ -24,9 +24,43 @@
         .setTitle(@"控件", UIControlStateNormal)
         .setDefaultClickAction(^(LWJButton * _Nonnull btn) {
              NSLog(@"Test");
-        });
+        })
+        .setBorderColor(UIColor.greenColor)
+        .setBorderWidth(2)
+        .setCornerRadius(5);
+        
     }];
     [self.view addSubview:btn];
+    
+//    LWJTextField *tf = [[LWJTextField alloc] initWithFrame:CGRectMake(btn.left, btn.bottom+10, btn.width, btn.height)];
+//    tf
+//    .didBeginEdit(^(LWJTextField * _Nonnull tf) {
+//        NSLog(@"开始编辑");
+//    })
+//    .setBorderWidth(1)
+//    .setBorderColor(UIColor.blueColor);
+    LWJTextField *tv =  [LWJTextField lwj_make:^(LWJTextField * _Nonnull maker) {
+        maker.setFrame(CGRectMake(btn.left, btn.bottom+10, btn.width, btn.height))
+        .beginEdit(^(LWJTextField * _Nonnull tf) {
+            NSLog(@"begin");
+        })
+        .changeEdit(^(LWJTextField * _Nonnull tf) {
+            NSLog(@"change");
+        })
+        .endEdit(^(LWJTextField * _Nonnull tf) {
+            NSLog(@"end");
+        })
+        .keyReturn(^(LWJTextField * _Nonnull tf) {
+            NSLog(@"KeyReturn");
+            [maker resignFirstResponder];
+        })
+        .setBorderColor(UIColor.blueColor)
+        .setBorderWidth(2);
+    }];
+    [self.view addSubview:tv];
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 

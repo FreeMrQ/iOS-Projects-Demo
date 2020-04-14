@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "LWJButton.h"
+#import "LWJTextField.h"
+#import "LWJLabel.h"
+#import "LWJTextView.h"
+#import "LWJImageView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LWJKit : NSObject
