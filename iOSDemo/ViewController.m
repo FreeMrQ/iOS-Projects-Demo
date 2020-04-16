@@ -39,6 +39,7 @@
     [_datas addObject:@"Block基础"];
     [_datas addObject:@"ReactiveCocoa"];
     [_datas addObject:@"UIComponents"];
+    [_datas addObject:@"Flutter"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -85,6 +86,10 @@
         case 3:{
             UIUsage *usage = [[UIUsage alloc] init];
             [self.navigationController pushViewController:usage animated:YES];
+        }
+            break;
+        case 4:{
+            
         }
             break;
         default:

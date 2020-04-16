@@ -224,6 +224,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		445E3EAE2445B65D008AADF9 /* FlutterUsage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlutterUsage;
+			sourceTree = "<group>";
+		};
 		4491A7B9243C70780081732B = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +257,7 @@
 		4491A7C4243C70780081732B /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				445E3EAE2445B65D008AADF9 /* FlutterUsage */,
 				445E3E8E24443D06008AADF9 /* Base */,
 				445E3E8A244439E4008AADF9 /* UIComponentsUsage */,
 				445E3E7924440FDF008AADF9 /* ReactiveCocoaUsage */,
