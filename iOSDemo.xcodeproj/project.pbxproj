@@ -22,6 +22,7 @@
 		445E3EA724446591008AADF9 /* LWJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3EA624446591008AADF9 /* LWJTextField.m */; };
 		445E3EAA244465A2008AADF9 /* LWJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3EA9244465A2008AADF9 /* LWJTextView.m */; };
 		445E3EAD244465B2008AADF9 /* LWJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3EAC244465B2008AADF9 /* LWJImageView.m */; };
+		445E3EB62447FDF1008AADF9 /* FlutterUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 445E3EB52447FDF1008AADF9 /* FlutterUsage.m */; };
 		4491A7C7243C70780081732B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C6243C70780081732B /* AppDelegate.m */; };
 		4491A7CA243C70780081732B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7C9243C70780081732B /* SceneDelegate.m */; };
 		4491A7CD243C70780081732B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4491A7CC243C70780081732B /* ViewController.m */; };
@@ -84,6 +85,8 @@
 		445E3EA9244465A2008AADF9 /* LWJTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWJTextView.m; sourceTree = "<group>"; };
 		445E3EAB244465B2008AADF9 /* LWJImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWJImageView.h; sourceTree = "<group>"; };
 		445E3EAC244465B2008AADF9 /* LWJImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWJImageView.m; sourceTree = "<group>"; };
+		445E3EB42447FDF1008AADF9 /* FlutterUsage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterUsage.h; sourceTree = "<group>"; };
+		445E3EB52447FDF1008AADF9 /* FlutterUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterUsage.m; sourceTree = "<group>"; };
 		4491A7C2243C70780081732B /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4491A7C5243C70780081732B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4491A7C6243C70780081732B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 		445E3EAE2445B65D008AADF9 /* FlutterUsage */ = {
 			isa = PBXGroup;
 			children = (
+				445E3EB42447FDF1008AADF9 /* FlutterUsage.h */,
+				445E3EB52447FDF1008AADF9 /* FlutterUsage.m */,
 			);
 			path = FlutterUsage;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			buildConfigurationList = 4491A7F1243C707C0081732B /* Build configuration list for PBXNativeTarget "iOSDemo" */;
 			buildPhases = (
 				6BC51F0C7AF3B8D81CAD207A /* [CP] Check Pods Manifest.lock */,
+				FC6964782EDF1A773CC7F954 /* [CP-User] Run Flutter Build Script */,
 				4491A7BE243C70780081732B /* Sources */,
 				4491A7BF243C70780081732B /* Frameworks */,
 				4491A7C0243C70780081732B /* Resources */,
@@ -546,6 +552,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC6964782EDF1A773CC7F954 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Users/ronds/Documents/github/FlutterDemo/flutter_demo/.metadata",
+				"${SRCROOT}/../FlutterDemo/flutter_demo/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../FlutterDemo/flutter_demo/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../FlutterDemo/flutter_demo/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../FlutterDemo/flutter_demo/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -569,6 +591,7 @@
 				445E3EA124444211008AADF9 /* UIView+Expand.m in Sources */,
 				445E3EAA244465A2008AADF9 /* LWJTextView.m in Sources */,
 				445E3E9724443D63008AADF9 /* BaseTabBarController.m in Sources */,
+				445E3EB62447FDF1008AADF9 /* FlutterUsage.m in Sources */,
 				445E3E8D24443A41008AADF9 /* UIUsage.m in Sources */,
 				4491A7CA243C70780081732B /* SceneDelegate.m in Sources */,
 				445E3E85244437DB008AADF9 /* LWJButton.m in Sources */,

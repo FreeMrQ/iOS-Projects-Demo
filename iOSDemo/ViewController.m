@@ -11,6 +11,7 @@
 #import "BlockVC.h"
 #import "RACBase.h"
 #import "UIUsage.h"
+#import "FlutterUsage.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *datas;
@@ -89,7 +90,8 @@
         }
             break;
         case 4:{
-            
+            FlutterUsage *usage = [[FlutterUsage alloc] init];
+            [self.navigationController pushViewController:usage animated:YES];
         }
             break;
         default:

@@ -1,4 +1,9 @@
 PODS:
+  - Flutter (1.0.0)
+  - flutter_demo (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
   - Yoga (1.14.0)
@@ -6,6 +11,9 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - Flutter (from `../FlutterDemo/flutter_demo/.ios/Flutter/engine`)
+  - flutter_demo (from `../FlutterDemo/flutter_demo/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../FlutterDemo/flutter_demo/.ios/Flutter/FlutterPluginRegistrant`)
   - Masonry (~> 1.1.0)
   - ReactiveObjC (~> 3.1.1)
   - YogaKit (~> 1.7)
@@ -17,12 +25,23 @@ SPEC REPOS:
     - Yoga
     - YogaKit
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../FlutterDemo/flutter_demo/.ios/Flutter/engine"
+  flutter_demo:
+    :path: "../FlutterDemo/flutter_demo/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../FlutterDemo/flutter_demo/.ios/Flutter/FlutterPluginRegistrant"
+
 SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_demo: 14742ae52bfcea1a6a0069ce86b2a1bbba3b9e39
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 09d54cc6776d72ab43a9b7c66731a87a37ea2624
+PODFILE CHECKSUM: 50a8be864199ae55cc4a899b32d09bbb445f3c19
 
 COCOAPODS: 1.9.1

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 @interface AppDelegate ()
@@ -19,6 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
+    // Runs the default Dart entrypoint with a default Flutter route.
+    [self.flutterEngine run];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
+    
     if(@available(iOS 13.0,*)){
         
     }else{
@@ -30,7 +37,7 @@
         [self.window setRootViewController:nav];
         [self.window makeKeyAndVisible];
     }
-    return YES;
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 

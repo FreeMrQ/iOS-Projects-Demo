@@ -1,9 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
+flutter_application_path = '/Users/ronds/Documents/github/FlutterDemo/flutter_demo'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 target 'iOSDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   inhibit_all_warnings!
+  install_all_flutter_pods(flutter_application_path)
   
   # Pods for iOSDemo
   # Facebook YogaKit https://github.com/facebook/yoga/tree/master/YogaKit

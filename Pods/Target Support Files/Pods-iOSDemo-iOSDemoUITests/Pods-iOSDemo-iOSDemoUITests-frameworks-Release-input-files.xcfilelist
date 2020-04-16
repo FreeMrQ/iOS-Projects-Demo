@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-iOSDemo-iOSDemoUITests/Pods-iOSDemo-iOSDemoUITests-frameworks.sh
+${PODS_ROOT}/../../FlutterDemo/flutter_demo/.ios/Flutter/engine/Flutter.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework
 ${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework
+${PODS_ROOT}/../../FlutterDemo/flutter_demo/.ios/Flutter/App.framework
